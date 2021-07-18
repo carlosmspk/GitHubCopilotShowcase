@@ -32,5 +32,5 @@ a typical approach that uses a package's API. You can usually tell just by looki
 Yes. Very. Very common bad solutions are functions that have an initial description but aren't actually implemented (some even have comments with "TODO"
 followed by a pass statement), solutions which are just print statements (like def open_youtube() often leads to a suggestion that prints "Opening Youtube"
 followed by "Done!" and that's it), and huge chains of if elses that could easily be written as a single line. Although these solutions are abundant, they're
-usually very easy to dismiss and you can just focus on good solutions. There's also frequenly a solution that simply consists in printing a bunch of
+usually very easy to dismiss and you can just focus on good solutions. There's also frequently a solution that simply consists in printing a bunch of
 newlines, don't know what's up with that...
