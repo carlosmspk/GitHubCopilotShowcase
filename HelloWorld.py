@@ -1,10 +1,6 @@
 """
 Just like any other first program, we need to print the good ol' Hello World!
-
-PS: The above sentence was autocompleted by Copilot after "go-" from "good"
-PSS: I didn't even need to write the comment for Print "Hello World". As soon
-as I wrote the "#" for comment, Copilot the comment.
 """
 
-# Print "Hello World!"
+# Print "Hello World!" ## I didn't need to write this, based on the file description Copilot wrote the comment itself as soon as I typed "#"
 print("Hello World!")
