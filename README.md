@@ -22,7 +22,7 @@ For instance, getting it to plot and animate plots was surprisingly easy, and I 
 On the other hand, trying to make it print a circle in ASCII ("def print_circle") wasn't at all possible without specifically adding an initial __doc__ string specifying it, and
 Copilot would suggest functions that print triangles, squares, straight lines, zig zags, four vertices of a square, etc. but not a circle
 
-## Performance?
+## Performance
 Anything that involves iterating over lists and such, you can expect it to suggest naive approaches. Numpy arrays are also often iterated over with for loops (which have terrible performance), although Copilot does a good job of using packages, even if you're not importing them already, which makes performance comparable to a typical approach that uses a package's API. You can usually tell just by looking at the suggested code if it will perform well or not.
 
 ## Bad solutions
