@@ -28,7 +28,7 @@ Anything that involves iterating over lists and such, you can expect it to sugge
 ## Bad solutions
 Yes. Very. Very common bad solutions are functions that have an initial description but aren't actually implemented (some even have comments with "TODO" followed by a pass statement), solutions which are just print statements (like def open_youtube() often leads to a suggestion that prints "Opening Youtube" followed by "Done!" and that's it), and huge chains of if elses that could easily be written as a single line. Although these solutions are abundant, they're usually very easy to dismiss and you can just focus on good solutions. There's also frequently a solution that simply consists in printing a bunch of newlines, don't know what's up with that...
 
-## Context
+## Usage of Context
 Perhaps one of the things I liked most about Copilot is that, although it looks at other people's codes to come up with code for you, it actually does a good job at adapting to how you write stuff and looking at your own code. Not just code, I noticed it also looks at file names.
 
 For instance, I tested it on a script where I, very often, saved pandas dataframes as csv, and, to my surprise, the generated code actually started doing the same thing, even though I didn't even include pandas or csv in function names or comments, and it would even print things along the way that I would usually print while debugging!
