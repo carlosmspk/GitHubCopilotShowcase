@@ -1,4 +1,4 @@
-"""
+""">>>
 This script will create a simple alarm clock that is configurable, and plays a sound at a specified time.
 I was having trouble with generating a nice sounding tone, so I ended up with white noise which is a bit... jumpscare-like.
 """
@@ -30,7 +30,7 @@ class AlarmClock:
         print("Alarm set for {}:{}".format(self.time.hour, self.time.minute))
 
     def play_alarm(self):
-        """
+        """>>>
         play white noise for 1 second using pyaudio. The white noise is also generated in this method by generating random values between 0 and 255 (integer values, converted to bytes-like).
         """
         # define the output audio stream
