@@ -3,27 +3,23 @@ This program produces a sphere in ASCII art.
 Using the "*" the program prints an approximation of a sphere for a given radius
 """
 
-def sphere(radius : int) -> str:
+def circle(radius : int) -> list:
     """>>>
-    Returns a string of a sphere of radius "radius" using * as ASCII art
+    Returns a list of strings of a circle of radius "radius" using * as ASCII art. This is done using (x-xcenter)**2 and (y-ycenter)**2 lesser than radius**2
     """
-    # The sphere is a list of strings
-    sphere = []
-    # The loop runs from -radius to radius+1
-    for i in range(-radius, radius+1):
-        # The inner loop runs from -radius to radius+1
-        for j in range(-radius, radius+1):
-            # The "*" is the ASCII art of a sphere
-            if i**2 + j**2 <= radius**2:
-                sphere.append("*")
+    xcenter = radius
+    ycenter = radius
+    circle = []
+    for x in range(-radius, radius+1):
+        for y in range(-radius, radius+1):
+            if x**2 + y**2 <= radius**2:
+                circle.append("*")
             else:
-                sphere.append(" ")
-        # The line is a string of the current row
-        line = "".join(sphere)
-        # The list is a string of the current row
-        sphere = [line]
-    # The final row of the string is a string of the entire sphere
-    return "\n".join(sphere)
+                circle.append(" ")
+        circle.append("\n")
+    return circle
 
-#>>> Print sphere with radius 5
-print(sphere(5))
+#>>> print results from circle(10)
+print("".join(circle(10)))
+
+
