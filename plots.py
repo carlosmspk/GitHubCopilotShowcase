@@ -8,7 +8,7 @@ import networkx as nx
 from matplotlib import animation
 
 def plot_sphere (radius: float):
-    """
+    """>>>
     plot a sphere in 3d proection using pyplot
     """
     u, v = np.mgrid[0:2*np.pi:20j, 0:np.pi:10j]
@@ -29,7 +29,7 @@ def plot_sphere (radius: float):
     plt.show()
 
 def plot_random_graph_network(n: int):
-    """
+    """>>>
     Creates a random graph made up of n nodes, connected randomly and displays them using pyplot. Each node is represented as circle, and each node's edges are represented as straight lines
     """
     G = nx.gnm_random_graph(n, n*(n-1)/2)
@@ -41,7 +41,7 @@ def plot_random_graph_network(n: int):
     plt.show()
 
 def plot_geometric_brownian_motion (points: int, up_to: float):
-    """
+    """>>>
     Plots a line plot of a geometric brownian motion. points defines the number of points to plot and "up_to" defines the max x x value to plot. Y axis is in logartihmic scale
     """
     t = np.linspace(0, up_to, points)
@@ -52,7 +52,7 @@ def plot_geometric_brownian_motion (points: int, up_to: float):
     plt.show()
 
 def plot_sine_wave_with_frequencies (frequencies: list):
-    """
+    """>>>
     plots a single waveform that corresponds to the addition of sinewaves of each of the frequencies supplied in the "frequencies" list. X axis corresponds to 4*(1/min(frequencies)).
     """
     x = np.linspace(0, 4*(1/min(frequencies)), 1000)
@@ -65,7 +65,7 @@ def plot_sine_wave_with_frequencies (frequencies: list):
     plt.show()
     
 def plot_area_under_the_curve(x: list, y: list):
-    """
+    """>>>
     Creates a plot of the area under the curve of the supplied x,y graph. y and x must have matching lengths.
     The area under the curve is greyed out.
     """
@@ -80,7 +80,7 @@ def plot_area_under_the_curve(x: list, y: list):
     print("The area under the curve is: " + str(area))
 
 def plot_animated_sine_wave():
-    """
+    """>>>
     Plots a sine wave that is animated.
     """
     x = np.linspace(0, 2*np.pi, 1000)
@@ -100,7 +100,7 @@ def plot_animated_sine_wave():
     plt.show()
 
 def scatter_animated_custom (xx:list, yy:list, fps = 10):
-    """
+    """>>>
     Gradually iterates through points in a scatter plot. Each frame iterates a single x,y point, such that only one point is visible at any time. The plot window should be adjusted to the size of xx and yy.
     """
     fig = plt.figure()
